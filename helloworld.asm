@@ -6,9 +6,9 @@ TITLE helloworld.asm
 
 	INCLUDE		windows.inc
 	INCLUDE		user32.inc
-	INCLUDELIB  user32.lib
-	INCLUDE     kernel32.inc
-	INCLUDELIB  kernel32.lib
+	INCLUDELIB	user32.lib
+	INCLUDE		kernel32.inc
+	INCLUDELIB	kernel32.lib
 
 	.const
 bTitle		BYTE	"title", 0
@@ -21,5 +21,6 @@ main	PROC
 		MB_OK
 
 	INVOKE ExitProcess, NULL
+
 main	ENDP
 	END main
